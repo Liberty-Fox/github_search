@@ -21,12 +21,12 @@ class HomeScreen extends StatelessWidget {
           builder: (context, state) {
             if (state is HomeResult) {
               return Text(
-                'результат поиска',
+                'результат поиска'.toUpperCase(),
                 style: _navigationBarTextStyle,
               );
             }
             return Text(
-              'поиск',
+              'поиск'.toUpperCase(),
               style: _navigationBarTextStyle,
             );
           },
@@ -101,7 +101,7 @@ class HomeScreenResult extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'по запросу: ',
+                  'по запросу: '.toUpperCase(),
                   style: _headerTextStyle,
                 ),
                 GestureDetector(
@@ -114,7 +114,7 @@ class HomeScreenResult extends StatelessWidget {
               ],
             ),
             Text(
-              'найдено: ${result.length}',
+              'найдено: ${result.length}'.toUpperCase(),
               style: _headerTextStyle,
             ),
           ],

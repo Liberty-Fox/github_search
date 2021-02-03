@@ -34,7 +34,7 @@ class SearchButton extends StatelessWidget {
               ),
               borderRadius: BorderRadius.circular(32.0),
               child: Text(
-                'найти',
+                'найти'.toUpperCase(),
                 style: TextStyle(
                   fontSize: 12.0,
                   fontWeight: FontWeight.w600,
